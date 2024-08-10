@@ -18,6 +18,8 @@ This repository contains a simple Flask application that integrates with OpenAI'
 - Flask
 - Flask-SocketIO
 - OpenAI Python client
+- Python-dotenv
+
 
 ### Installation
 
@@ -54,8 +56,4 @@ This repository contains a simple Flask application that integrates with OpenAI'
 ## Notes
 
 - Make sure to handle your OpenAI API key securely.
-- This application is meant for educational purposes and may require modifications for production use.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- This application is meant for testing purposes and may require modifications for production use.
