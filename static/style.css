@@ -1,0 +1,109 @@
+body {
+  background-color: #fefae0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#chat-container {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#messages {
+  overflow-y: auto;
+  height: 300px;
+  background-color: #ccd5ae;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 70%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  word-wrap: break-word;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.user {
+  background-color: #d4a373;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.ai {
+  background-color: #fff;
+  align-self: flex-start;
+  text-align: left;
+}
+
+#typing-indicator {
+  font-style: italic;
+  color: #777;
+}
+
+.card-header {
+  background-color: #ccd5ae;
+  text-align: center;
+}
+
+.card-footer {
+  background-color: #ccd5ae;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#message-input {
+  border-radius: 50px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+#mic-button {
+  background-color: #d4a373;
+  border-color: #d4a373;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+#send-button {
+  background-color: #d4a373;
+  border-color: #d4a373;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+#mic-button img {
+  width: 20px;
+  height: 20px;
+}
+
+#send-button:hover, #mic-button:hover {
+  background-color: #b38152;
+  border-color: #b38152;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
